@@ -1,0 +1,691 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+body{
+    background-color: #212529;
+}
+.header{
+    background-color: #0f235a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.header-text{
+    /* background-color: red; */
+    /* width: 50%; */
+    display: flex;
+    gap: 60px;
+    /* color: white; */
+}
+
+#a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    color: white;
+    margin-right: 10px;
+}
+#a:hover{
+    color: rgb(226, 246, 7);
+    /* border-bottom: 2px solid; */
+    /* transform: translateY(-5px); */
+}
+#a:active{
+    color: rgb(252, 11, 51);
+}
+#first-img{
+    /* width: 50%; */
+}
+
+.logo{
+    display: flex;
+    width: max-content;
+    align-items: center;
+ 
+}
+.main-img{
+    width: 100%;
+    height: 280px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: photo;
+    animation-duration: 20s;
+    animation-timing-function:step-start;
+    /* animation-delay: 1s; */
+    animation-iteration-count: infinite; 
+
+}
+.main-img:hover{
+    opacity: .8;
+}
+@keyframes photo {
+    25%{
+        background-image: url(./mainimg/badm.jpg);
+        background-position: center;
+    }
+    50%{
+        background-position: bottom;
+        background-image: url(./mainimg/golf.jpg);
+    }
+    75%{
+        background-position:center;
+        background-image: url(./mainimg/table.jpg);
+    }
+    100%{
+        background-image: url(./mainimg/cricket.jpg);
+        background-position: center;
+    }
+}
+/* ---------------------------------------header part complete----------------------------------------- */
+.play{
+    display: flex;
+    background-color:white;
+    justify-content: center;
+    color: black;
+}
+#playlogo{
+    background-color: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    /* border-bottom: 3px solid black;
+    border-top: 3px solid black; */
+    
+}
+.play p{
+    margin-top: 3%;
+}
+/* .playmain{
+
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+    flex-direction: column;
+} */
+
+.four-box{
+    /* background-color: #E7FBE6; */
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4%;
+    background-color: #212529;
+
+}
+
+.box{
+    background-color: rgb(229, 247, 240);
+    width: 22%;
+    height: 450px;
+    border: 2px solid white ;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: black;
+}
+.box-img{
+    height: 200px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box-img:hover{
+    opacity: .5;
+}
+.box-text{
+    margin-top: 3%;
+    font-size: 13px;
+    gap: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#b1{
+    /* background-color: red; */
+    width: 65%;
+    margin-top: 2%;
+}
+.box-text-size{
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 12px;
+
+}
+#price{
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+/* --------------------------------------------------button------------------------------------------------------------------ */
+.button2 {
+    top: 4%;
+    left: 25%;
+    color: white;
+    height: 3%;
+    width: 30%;
+    font-size: 10px;
+    text-decoration: none;
+    border: 2px solid black;
+    display: inline-block;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    cursor: pointer;
+    font-size: 13px;
+    border-radius: 10px;
+    background: #e8e8e8;
+    border: 2px solid #080606;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .button2:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 160%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+  
+  /* .button2:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #fbff83;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  } */
+  
+  .button2:hover {
+    color: black;
+    border: 2px solid #0e0b0b;
+  }
+  
+  .button2:hover:before {
+    top: -35%;
+    /* background-color: #009087; */
+    background-color: #1cff18;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+  
+  .button2:hover:after {
+    top: -45%;
+    /* background-color: #fbff83; */
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+
+
+/* -------------------------------------------------------button  end --------------------------------------------------- */
+
+.ground-part-1{
+    display: flex;
+    justify-content: space-evenly;
+    transform: translateY(50px);
+    background-color: #212529;
+
+}
+.ground-box{
+    width: 30%;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: rgb(229, 247, 240);
+    color: black;
+}
+.ground-img1{
+    width: 100%;
+    height: 320px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    animation-name: modi;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function:step-start;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@keyframes modi {
+    20%{
+        background-image: url(./stadium/narendra-modi-stadium-aerial-1652365057.jpg);
+    }
+    40%{
+        background-image: url(./keyimg/modi/m1.jpg);
+    }
+    80%{
+        background-image: url(./keyimg/modi/m-3.jpg);
+        /* background-position: center; */
+    }
+    100%{
+        background-image: url(./keyimg/modi/m2.jpg);
+    }
+}
+
+
+.ground-img2{
+    width: 100%;
+    height: 320px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    animation-name: china;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function:step-start;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@keyframes china {
+    20% {
+        background-image: url(./stadium/M.-Chinnaswamy-Stadium.jpg);
+    }
+    40%{
+        background-image: url(./keyimg/chena/ch1.jpg);
+    }
+    80%{
+        background-image: url(./keyimg/chena/ch2.jpg);
+        /* background-position: center; */
+    }
+    100%{
+        background-image: url(./keyimg/chena/ch3.jpg);
+    }
+}
+
+.ground-img3{
+    width: 100%;
+    height: 320px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    animation-name: arun;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function:step-start;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@keyframes arun {
+    20% {
+        background-image: url(./stadium/Feature-Image_-Arun-Jaitley-Stadium.jpg);
+    }
+    40%{
+        background-image: url(./keyimg/arun/a1.jpg);
+    }
+    80%{
+        background-image: url(./keyimg/arun/a2.jpg);
+        /* background-position: center; */
+    }
+    100%{
+        background-image: url(./keyimg/arun/a3.jpg);
+    }
+}
+
+.ground-img4{
+    width: 100%;
+    height: 320px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    animation-name: eaden;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function:step-start;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@keyframes eaden {
+    20% {
+        background-image: url(./stadium/eaden\ new.jpg);
+    }
+    40%{
+        background-image: url(./keyimg/eaden/eaden1.jpg);
+    }
+    80%{
+        background-image: url(./keyimg/eaden/eaden2.jpg);
+        /* background-position: center; */
+    }
+    100%{
+        background-image: url(./keyimg/eaden/eaden3.jpg);
+    }
+}
+
+.ground-img5{
+    width: 100%;
+    height: 320px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    animation-name: dharam;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function:step-start;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@keyframes dharam {
+    20% {
+        background-image: url(./stadium/Dharamshala-Cricket-Ground.jpg);
+    }
+    40%{
+        background-image: url(./keyimg/dharam/dh1.jpg);
+    }
+    80%{
+        background-image: url(./keyimg/dharam/dh2.jpg);
+        /* background-position: center; */
+    }
+    100%{
+        background-image: url(./keyimg/dharam/dh3.jpg);
+    }
+}
+
+
+.ground-img6{
+    width: 100%;
+    height: 320px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    animation-name: wankhede;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function:step-start;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@keyframes wankhede {
+    20% {
+        background-image: url(./stadium/Wankhede-stadium-696x364.jpg);
+    }
+    40%{
+        background-image: url(./keyimg/a-wankhede/w1.png);
+    }
+    80%{
+        background-image: url(./keyimg/a-wankhede/w2.jpg);
+        /* background-position: center; */
+    }
+    100%{
+        background-image: url(./keyimg/a-wankhede/w3.jpg);
+    }
+}
+
+
+.ground-img1:hover{
+    opacity: .8;
+}
+.ground-img2:hover{
+    opacity: .8;
+}
+.ground-img3:hover{
+    opacity: .8;
+}
+.ground-img4:hover{
+    opacity: .8;
+}
+.ground-img5:hover{
+    opacity: .8;
+}
+.ground-img6:hover{
+    opacity: .8;
+}
+.stadium-text{
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.ground-part-2{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    transform: translateY(100px);
+    background-color: #212529;
+
+}
+
+
+/* --------------------------------button 2 start---------------------------------------- */
+
+.button {
+    height: 35px;
+    width: 120px;
+    border: 2px solid;
+    border-radius: 10px;
+    cursor:pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    margin-top: 2%;
+    margin-bottom: 5%;
+  }
+  .type1::before {
+    content: "Book Now";
+    height: 35px;
+    width: 120px;
+    background-color:yellow;
+    color: #0f1414;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateY(0px) scale(1.2);
+    font-size: 90%;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+  }
+  .type1::after {
+    content: "Thanks";
+    height: 35px;
+    width: 120px;
+    background-color: #39f136;
+    color: #000000;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateY(50px);
+    font-size: 90%;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .type1:hover::after {
+    transform: translateY(0) scale(1.2);
+  }
+  
+  .type1:hover::before {
+    transform: translateY(-50px) scale(0) rotate(120deg);
+  }
+
+
+
+/* ---------------------------button 2 end------------------------------------------ */
+
+
+
+.footer{
+    margin-top: 10%;
+    background-color: #0f235a;
+    color: white;
+    height: 120px;
+}
+.footer-text{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2%;
+    cursor: pointer;
+}
+.footer-text a{
+    text-decoration: none;
+    color: white;
+}
+.follow{
+    width: 10%;
+}
+.copy{
+    display: flex;
+    justify-content: center;
+
+}
+.follow{
+    margin-top: 1%;
+    width: 15%;
+    /* background-color:#19f72f; */
+    display: flex;
+    height: 30px;
+    justify-self:flex-end ;
+    margin-right: 1.9%;
+}
+.footer-text a:hover{
+    color: rgb(247, 239, 2);
+}
+.footer-text a:active{
+    color: rgb(252, 11, 51);
+
+}
+.copy p:hover{
+    cursor: not-allowed;
+}
+
+#social-media-img{
+    width: 60%;
+}
+#social-media-img:hover{
+    border: 2px solid white;
+    border-radius: 10px;
+}
+#social-media-img:active{
+    border: 2px solid rgb(247, 13, 13);
+    border-radius: 10px;
+}
+@media screen and (min-width:200px) and (max-width:426px) {
+    .header{
+        /* background-color: red; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        width: 20%;
+    }
+    .h1{
+        /* margin-left: -150%; */
+    }
+    .header-text{
+        /* background-color: rebeccapurple; */
+        gap: 2px;
+        margin-top: 5%;
+        
+    }
+    #first-img{
+        margin-left: -100%;
+        width: 100%;
+        
+    }
+    .play p{
+        margin-top: 10%;
+    }
+    .four-box{
+        display:inline;
+    }
+    .box{
+        width: 68%;
+        display: flex;
+        justify-self: center;
+        margin-top: 6%;
+    }
+    .ground-part-1{
+        display: inline;  
+    }
+    .ground-box{
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+        width: 90%;
+        margin-top: 6%;
+    }
+    .ground-part-1{
+        display: inline;  
+    }
+    .ground-part-2{
+        display: inline;  
+    }
+    .footer{
+        height: 180px;
+    }
+    .follow{
+        width: 80%;
+    }
+    #social-media-img{
+        width: 30%;
+    }
+}
+
+
+@media screen and (max-width: 770px) and (min-width: 433px) {
+    body{
+        overflow-x: hidden;
+    }
+    .h1{
+        /* background-color: #47fd44; */
+        width: 50%;
+    }
+    #first-img{
+        width: 30%;
+    }
+    .header-text{
+        margin-right: 3%;
+    }
+    #b1{
+        width: 80%;
+    }
+    .button2{
+        height: 4%;
+        text-align: center;
+        width: 50%;
+        left: 12%;
+
+    }
+    .footer{
+        height: 110px;
+    }
+    .footer-text{
+        margin-top: 20%;
+    }
+}

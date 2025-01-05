@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body{
+            background-image: url(./darkblu.jpg);
+            color: white;
+        }
+        body h1,h2{
+            color: greenyellow;
+            
+        }
+        .box{
+            /* background-color: aqua; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .address{
+            width: fit-content;
+            /* background-color: aquamarine; */
+            display: flex;
+            align-items: center;
+        }
+        .address p{
+            color: greenyellow;
+            
+        }
+        #address-logo{
+            width: 20%;
+            height: 1%;
+            /* padding-top: 1%; */
+            border: 2px solid;
+            border-radius: 50%;
+            background-color: white;
+        }
+        .address-1{
+            width: fit-content;
+            /* background-color: red; */
+            transform: translate(40px,-20px);
+            
+        }
+        .phone{
+            width: fit-content;
+            /* background-color: brown; */
+            display: flex;
+            align-items: center;
+        }
+        #phone-logo{
+            width: 20%;
+            border: 2px solid;
+            border-radius: 50%;
+            background-color: white;
+            height: 2%;
+        }
+        .phone-number{
+            /* background-color: chartreuse; */
+            transform: translate(40px,-20px);
+            width: fit-content;
+        }
+        .phone p{
+            color: greenyellow;
+        }
+        .mail{
+            width: fit-content;
+            /* background-color: brown; */
+            display: flex;
+            align-items: center;
+        }
+        #mail-logo{
+            width: 20%;
+            border: 2px solid;
+            border-radius: 50%;
+            background-color: white;
+            height: 2%;
+        }
+        .mail-id{
+            /* background-color: chartreuse; */
+            transform: translate(40px,-20px);
+            width: fit-content;
+        }
+        .mail p{
+            color: greenyellow;
+        }
+        .data{
+            
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            border: 3px solid;
+            border-radius: 10px;
+            transform: translate(500px,-300px);
+        }
+        #input{
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            width: 50%;
+            margin-left: 2%;
+        }
+        
+        #button{
+            width: 20%;
+            background-color: blue;
+            border-radius: 5px;
+            color: white;
+            margin-left: 2%;
+            margin-bottom: 2%;
+        }
+        .main-data{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        @media screen and (max-width: 777px) and (min-width: 200px) {
+            .data{
+                transform: translate(50px,0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="head">
+        <h1>Contact US</h1>
+        </div>
+        <div class="paragraph">
+            <h3>we always look forward to hearing to you.if you have any question,problem then you contact us.</h3>
+        </div>
+        
+    </div>
+    <div class="address">
+        <img src="./location.png" id="address-logo" alt="">
+        <b><p>Address</p></b>
+        </div>
+        <div class="address-1">
+            <p>S.V campus,Ayodhya Nagar</p>
+        <p>kadi,382715</p>
+    </div>
+
+    <div class="phone">
+        <img src="./phone.png" id="phone-logo" alt="">
+        <b><p>Phone</p></b>
+    </div>
+    <div class="phone-number">
+        <p>123-456-789</p>
+    </div>
+
+    <div class="mail">
+        <img src="./mai.png" id="mail-logo" alt="">
+        <b><p>Mail</p></b>
+    </div>
+    <div class="mail-id">
+        <p>abcd123@gmail.com</p>
+    </div>
+
+
+    
+        <div class="data">
+           <div class="main-data">
+            <h2>Send Message</h2>
+            <input type="text" placeholder="Full Name" id="input">
+            <input type="email" placeholder="Email" id="input">
+            <input type="text" placeholder="Type Your Message" id="input">
+            <input type="button" value="Send" id="button" >
+           </div>
+        </div>
+
+  
+</body>
+</html>
